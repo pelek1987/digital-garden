@@ -6,23 +6,31 @@ export default defineConfig({
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
+    // nav: [
+    //   { text: 'Home', link: '/' },
+    //   { text: 'Examples', link: '/markdown-examples' }
+    // ],
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ],
+    logo: '/assets/img/logo-symbol.svg',
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Start',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Start here', link: '/' }
         ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      },
+      {
+        text: 'Core',
+        items: [
+          { text: 'Direction', link: '/Core/Direction.md' },
+          { text: 'Learning System', link: '/Core/Learning System.md' },
+          { text: 'Process', link: '/Core/Process.md' },
+          { text: 'Knowing thyself', link: '/Core/Knowing thyself.md' },
+          { text: 'Values', link: '/Core/Values.md' },
+        ]
+      },
     ]
   }
 })
